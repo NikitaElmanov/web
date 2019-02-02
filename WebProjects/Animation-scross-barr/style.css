@@ -1,0 +1,32 @@
+#bar {position: relative;}
+
+#cross-bar {
+	position: absolute;
+	left: 300px;
+	top: 300px;
+	width: 300px;
+	height: 40px;
+	background-color: lightgrey;
+	border-radius: 5px;
+}
+
+#cb-color {
+	background-color: green;
+	height: 100%;
+	width: 0%;
+	border-radius: 7px;
+}
+
+#block-text {
+	color: white;
+	background-color: purple;
+	font-size: 15px;
+	font-family: Calibril;
+	border: 2px solid black;
+	border-radius: 5px;
+	width: 35px;
+	height: 15px;
+	margin-top: -20px;
+}
+
+#text {text-align: center;}

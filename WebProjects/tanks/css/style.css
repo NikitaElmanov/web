@@ -1,0 +1,19 @@
+*{
+	box-sizing: border-box;
+}
+
+#canvas{
+	position: absolute;
+	top:0;
+	left: 0;
+	background-color: black;
+}
+
+#audio {
+	position: absolute; 
+	top: 300px; 
+	left: 680px; 
+	transition: all ease 0.5s;
+	width: 48px;
+	height: 48px;
+}
