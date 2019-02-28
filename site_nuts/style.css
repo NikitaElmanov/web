@@ -1,0 +1,286 @@
+/*colors*/
+
+/*#BC8F8F - RosyBrown
+#4682B4 - SteelBlue*/
+/*#F0E68C - Khaki*/
+/*Olive - #808000*/
+/*MidnightBlue - #191970*/
+/*LightGoldenrodYellow - #FAFAD2*/
+
+/*common settings*/
+
+*{
+	box-sizing: border-box;
+}
+
+body #fon{
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	font-family: Calibri;
+	color: #191970;	
+	font-size: 18px;
+	background-image: url(imgs/fon.jpg);
+	background-attachment: fixed;
+	background-position: 0px 0px;
+	background-repeat: repeat;
+	background-size: contain; 
+}
+
+body #busket_body{
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	font-family: Calibri;
+	color: #191970;	
+	font-size: 18px;
+	background-color: url(imgs/fon.jpg);
+	background-attachment: fixed;
+	background-position: 0px 0px;
+	background-repeat: repeat;
+	background-size: contain; 
+}
+
+span.caption{
+	color: SteelBlue;
+	font-size: 25px;
+}
+
+a{text-decoration: none;}
+
+/*specific settings*/
+
+/*HEADER*/
+#header{
+	width: 100%;
+	margin-bottom: 10px;
+	position: relative;
+}
+
+.inner-header{
+	height: 60px; 
+	background-color: #BC8F8F;
+	font-size: 40px;
+	padding-left: 10px;
+}
+.inner-header div.caption .caption-text{
+	position: absolute;
+	top: 7px;
+	left: 90px;
+	/*font-family: Calibri;*/
+	color: MidnightBlue;
+}
+
+div.caption{
+	position: relative;
+}
+
+.cart {
+	position: absolute;
+	left: 100px;
+}
+
+/*menu*/
+
+#header .side{ 
+position: relative; 
+top: -65px; 
+} 
+
+#header .side ul { 
+margin: 0px; 
+padding: 0px; 
+list-style: none; 
+display: flex; 
+justify-content: center;
+} 
+
+/*Cancel of 'display: flex; justify-content: center;' for submemu  */
+#header .side ul li ul.menu__drop { 
+	display: block; 
+} 
+
+#header .side ul.menu li a { 
+display: block; 
+background-color: LightGoldenrodYellow; 
+color: Olive; 
+padding: 10px 20px 10px 20px; 
+border: 1px solid Olive; 
+transition: 1s all; 
+font-size: 18px; 
+}
+
+#header .side .menu__list a:hover {
+	color: white;
+	background-color: Olive;
+	padding: 10px 10px 10px 30px;
+}
+
+#header .side ul li.menu__list:first-child a{
+	border-radius: 5px 0px 0px 5px;
+}
+
+#header .side ul li.menu__list:last-child a{
+	border-radius: 0px 5px 5px 0px;
+}
+
+/*submenu */ 
+
+#header .side li.menu__list{ 
+	position: relative; 
+} 
+
+#header .side .menu__list .menu__drop { 
+position: absolute; 
+opacity: 0; 
+transition: 1s opacity; 
+top: -9999em; 
+} 
+
+#header .side .menu__list:hover .menu__drop{ 
+opacity: 1; 
+top: 100%; 
+}
+
+#header .side ul li.menu__list ul.menu__drop li a{
+	background-color: RosyBrown;
+	color: white;
+	border-bottom: 1px solid Olive;
+	border-radius: 0px 0px 0px 0px;
+	padding: 10px 20px 10px 15px;
+}
+
+#header .side ul li.menu__list ul.menu__drop li a:hover {
+	color: white;
+	background-color: Olive;
+	padding: 10px 5px 10px 25px;
+}
+
+/*LEFT*/
+
+#left-col {
+	float: left;
+	width: 20%;
+	padding-right: 10px;
+}
+.inner-left{
+	background-color: #F0E68C;
+	height: 100%;
+	padding: 5px;
+}
+
+/*menu*/ 
+
+#left-col .side ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#left-col .side ul li a {
+	display: block;
+	background-color: LightGoldenrodYellow;
+	color: Olive;
+	padding: 10px;
+	border-bottom: 1px solid Olive;
+	transition: 1s all;
+}
+
+#left-col .side .menu__list .menu__drop a:hover {
+	color: white;
+	background-color: Olive;
+	padding: 10px 10px 10px 30px;
+}
+
+#left-col .side ul li:last-child a {
+	border-bottom: 0px;
+}
+
+/*submenu*/
+#left-col .menu__list{
+	position: relative;
+}
+
+#left-col .menu__drop{
+	position: absolute;
+	width: 100%;
+	left: 100%;
+	top: -99999em;
+	opacity: 0;
+	transition: 1s opacity;
+	border-left: 5px solid transparent;
+}
+
+#left-col .menu li .menu__drop li a {
+	background-color: RosyBrown;
+	color: white;
+	border-bottom: 1px solid Olive;
+}
+
+#left-col .menu li .menu__drop li:last-child a{
+	border-bottom: 0px;
+}
+
+#left-col .menu__list:hover .menu__drop{
+	opacity: 1;
+	top:0;
+}
+
+/*icons for subMenus*/
+#left-col .menu__list::after{
+	content: " ";
+	position: absolute;
+	border: 5px solid;
+	border-color: transparent transparent transparent Olive;
+	top: 1em;
+	right: 1em;
+	transition: 0.5s all;
+}
+
+#left-col .menu__list:hover::after{
+	transform: scaleX(-2);
+}
+
+
+/*CENTER*/
+
+#inner-center-view{
+	margin: 0 auto;
+	width: 60vw;
+}
+
+#center-col {
+	float: left; 
+	width: 65%;
+}
+.inner-center{
+	background-color: #F0E68C;
+	min-height: 500px;
+	padding: 5px;
+}
+
+
+/*RIGHT*/
+#right-col {
+	float: left;
+	width: 15%;
+	padding-left: 10px;
+}
+.inner-right{
+	background-color: #F0E68C;
+	min-height: 500px;
+	padding: 5px;
+}
+
+/*FOOTER*/
+#footer {
+	width: 100%;
+	clear: both;
+	padding-top: 10px;
+}
+.inner-footer{
+	background-color: #BC8F8F;
+	min-height: 50px;
+	padding: 5px;
+	text-align: center;
+}

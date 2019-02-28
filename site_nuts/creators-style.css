@@ -1,0 +1,26 @@
+/*html,
+body{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Calibri;
+}*/
+
+div.article{
+	font-size: 20px;
+	width: 50%;
+	height: 30%;
+	text-align: center;
+	margin: 17% auto;
+	transition: 1.5s all;
+	border: 5px outset RosyBrown;
+}
+
+div.article:hover{
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+div.article a{
+	text-decoration-line: none;
+}

@@ -1,0 +1,61 @@
+#main-slider{
+	width: 39vw;
+	height: 10vw;
+	margin: 70px auto;
+	margin-bottom: 0px;
+	position: relative;
+}
+
+#slider{
+	width: 39vw;
+	height: 10vw;
+	border: 3px solid Olive;
+	border-radius: 7px;
+	overflow: hidden;
+}
+
+#polosa{
+	/*background-color: pink;*/
+	width: 78vw;
+	position: relative;
+	left: 0;
+	transition: all ease 1s;
+}
+#polosa::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+#slider #polosa img{
+	width: 13vw;
+	height: 10vw;
+	float: left;
+	z-index: 1;
+}
+
+#main-slider button#slider-left{
+	height: 9.5vw;
+	width: 0.5vw;
+	position: absolute;
+	left: 0.5px;
+	z-index: 2;
+	top: 0.3vw;
+	opacity: 0.3;
+	background-color: lightgrey;
+	border-radius: 10px 0px 0px 10px;
+	text-align: center;
+}
+
+#main-slider button#slider-right{
+	height: 9.5vw;
+	width: 0.5vw;
+	position: absolute;
+	left: 37.7vw;
+	z-index: 2;
+	top: 0.3vw;
+	opacity: 0.3;
+	background-color: lightgrey;
+	border-radius: 0px 10px 10px 0px;
+	text-align: center;
+}
